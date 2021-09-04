@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>HANSINI RASHMIKA PORTFOLIO</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='profile.jpg'/>
+        <div class='herosectionDetails'>
+          <h1>Hansini Rashmika</h1>
+          <h3> <i>Undergraduate at University of Moratuwa</i></h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p>I am W.H.rashmika. I am undergraduate of university of moratuwa and i'm secoond year student. I am following an honors degree in information sysytem and management. I am also following exrternal degree law and HR. And the otherwise I have following web development courses such as php,html,css,javascript and python. I have worked at Telecom for the internship. my future ambition is to be a IT manager.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='html.jpg'>
+          <img title='CSS' src='css.jpg'>
+          <img title='Javascript' src='js.jpg'>
+          <img title='Node.JS' src='node.jpg'>
+          <img title='React' src='react.jpg'>
+          <img title='MongoDB' src='mongo.jpg'>
+          <img title='Firebase' src='fire.jpg'>
+          <img title='Redux' src='redux.jpg'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='hc.jpg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project.Some details of the project.Some details of the project.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='hc.jpg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
